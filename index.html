@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -21,8 +21,189 @@
     - The freeCodeCamp Team
 
     -->
-    <script  src="js/index.js"></script>
+    <script src="js/index.js"></script>
 
-    <h1>Hello World!</h1>
+    <!-- Header Section -->
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Microverse Trial Project Survery Form</h1>
+
+        <p id="description">
+          Thanks to the microverse team for given us the opportunity to build
+          this survey form to improve our HTML and CSS skills
+        </p>
+      </header>
+
+      <!-- Form  -->
+
+      <form id="survey-form">
+        <!-- Name label -->
+        <div class="form-group">
+          <label id="name-label">
+            Name
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+              class="form-control"
+            />
+          </label>
+        </div>
+
+        <div class="form-group">
+          <!-- Email Label -->
+
+          <label id="email-label">
+            Email
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="Enter your Email"
+              required
+              class="form-control"
+            />
+          </label>
+        </div>
+
+        <div class="form-group">
+          <!-- Age Label -->
+
+          <label id="number-label">
+            Age (optional)
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Age"
+              min="16"
+              max="35"
+              class="form-control"
+            />
+          </label>
+        </div>
+
+        <!-- Select Dropdown -->
+
+        <div class="form-group">
+          <p>What best describe your current role?</p>
+          <select name="current-role" id="dropdown">
+            <option disabled selected value>Select your current role</option>
+            <option value="student">Student</option>
+            <option value="full-time">Full-Time Job</option>
+            <option value="part-time">Part-time Job</option>
+            <option value="none">Prefer not to say</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+
+        <!-- Grouped Radio buttons-->
+
+        <div class="form-group">
+          <p>Would you recommend Microverse to your friends?</p>
+          <label for="radio-label">
+            <input
+              type="radio"
+              name="radio-button"
+              id="radio"
+              value="definitely"
+              class="form-control"
+            />
+            Definitely
+          </label>
+
+          <label for="radio-label">
+            <input
+              type="radio"
+              name="radio-button"
+              id="radio"
+              value="maybe"
+              class="form-control"
+            />
+            Maybe
+          </label>
+
+          <label for="radio-label">
+            <input
+              type="radio"
+              name="radio-button"
+              value="not sure"
+              class="form-control"
+            />
+            Not sure
+          </label>
+        </div>
+
+        <!-- Microverse features of interest -->
+
+        <div class="form-group">
+          <p>Which Microverse feature are you interested in?</p>
+          <select name="interest-area" id="dropdown">
+            <option disabled selected value>Select an option</option>
+
+            <option value="pair-programming">Pair programming</option>
+
+            <option value="mob-programming">Mob programming</option>
+
+            <option value="html-projects">HTML projects</option>
+
+            <option value="css-projects">CSS projects</option>
+
+            <option value="js-projects">JavaScript projects</option>
+          </select>
+        </div>
+
+        <!-- Checkboxes for choosing areas for improvement-->
+        <div class="form-group">
+          <p>
+            What will you like to see you improved?
+
+            <label for="checkboxe-label">
+              <input type="checkbox" , value="html" class="form-control" />
+              HTML Projects
+            </label>
+
+            <label for="checkbox-label">
+              <input type="checkbox" value="css" class="form-control" />
+              CSS Projects
+            </label>
+
+            <label for="checkbox-label">
+              <input type="checkbox" value="js" class="form-control" />
+              JavaScript Projects
+            </label>
+
+            <label for="checkbox-label">
+              <input
+                type="checkbox"
+                value="pair-programming"
+                class="form-control"
+              />
+              Pair Programming Sessions
+            </label>
+          </p>
+        </div>
+
+        <!-- TextArea Section -->
+        <div class="form-group">
+          <p>Any Comments or Suggestions?</p>
+          <textarea name="" id="comments" cols="30" rows="10">
+ Enter your comments here...</textarea
+          >
+        </div>
+
+        <!-- Submit button -->
+
+        <div class="form-group">
+          <input
+            type="submit"
+            id="submit"
+            value="Submit"
+            class="form-control"
+          />
+        </div>
+      </form>
+    </div>
   </body>
 </html>
