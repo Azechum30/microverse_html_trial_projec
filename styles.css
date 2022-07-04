@@ -4,13 +4,18 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
+  background-color: rgba(0, 0, 100, 35%);
+  background-attachment: fixed;
+  background-image: url('/luca-bravo-XJXWbfSo2f0-unsplash.jpg');
+  
 }
 
 .container {
   width: 100%;
   margin: 3.125rem auto 0 auto;
   box-sizing: border-box;
-  display: block
+  display: block;
+  
 }
 
 .header{
@@ -22,6 +27,7 @@ body {
   box-sizing: border-box;
   display: block;
   text-align: center;
+  color: white;
 }
 
 #title{
@@ -64,14 +70,21 @@ p{
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  color: white;
+  margin-bottom: 20px;
   }
 
 form{
-  min-width: 480px;
+  max-width: 750px;
   padding: 2.5rem;
-  background: darkblue;
+  background: rgba(0 0 139/50%);
   border-radius: 0.25rem;
   display: block;
+  align-items: center;
+  position: relative;
+  left:280px;
+  right:220px;
+
 }
 
 .form-group{
@@ -84,55 +97,66 @@ div{
 }
 
 label{
-  display: flex;
-  align-items: center;
-  font-size: 1.125rem;
+  display: block;
+  font-size: 1.275rem;
   margin-bottom: 0.5rem;
   cursor: default;
+  color: white;
 }
 
-/* .form-control{
-  display: block;
-  width: 100%;
-  height: 2.372rem;
-  padding: 0.375rem 0.75rem;
-  color: black;
-  background-color: white;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
+.form-control{
+  display: flex;
+  margin-top: 1.275rem;
+  font-size: 1.175rem;
+  border: solid rgba(53, 53, 54, 0.10);
   border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
+  width: 100%;
 }
 
-input, button, select, textarea {
-  font-size: inherit;
-  font-size: inherit;
-  line-height: initial;
-  margin: 0;
-
+#dropdown{
+  width: 100%;
+  font-size: 1.075rem;
+  border: solid rgba(53, 53, 54, 0.10);
+  border-radius: 0.25rem;
 }
 
-input {
-  writing-mode: horizontal-tb !important;
-  text-rendering: auto;
-  color: fieldtext;
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
+#radio-label{
+display: flex;
+align-items: left;
+}
+
+.radio-control{
   display: inline-block;
-  text-align: start;
-  appearance: auto;
-  -webkit-rtl-ordering: logical;
-  cursor: text;
-  background-color: field;
-  margin: 0em;
-  padding: 1px 2px;
-  border-width: 2px;
-  border-style: inset;
-  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-image: initial;
-} */
+  margin-bottom: 10px;
+  margin-right:10px;
+  width:50px;
+}
+
+.checkbox-label{
+  display: flex;
+}
+
+.checkbox-control{
+  display: inline-block;
+  width: 50px;
+  margin-right:10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#comments{
+  width: 100%;
+  padding: 10px auto;
+}
+
+#submit{
+  background-color: rgb(80, 189, 80);
+  color: white;
+  font-size: 1.375em;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 7vh;
+  border: 1px solid coral
+}
